@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="120" viewBox="0 0 1920 120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="tb" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071225" />
+      <stop offset="100%" stop-color="#071419" />
+    </linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency="0.8" numOctaves="1" stitchTiles="stitch" result="noise"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1920" height="120" fill="url(#tb)" fill-opacity="0.22"/>
+  <rect x="0" y="0" width="1920" height="2" fill="rgba(255,255,255,0.03)"/>
+  <rect x="12" y="12" width="120" height="96" rx="10" fill="rgba(255,255,255,0.02)"/>
+  <g transform="translate(150,18)" opacity="0.7">
+    <rect x="0" y="8" width="44" height="44" rx="8" fill="#0b1220" fill-opacity="0.14" stroke="rgba(255,255,255,0.03)"/>
+    <rect x="60" y="8" width="44" height="44" rx="8" fill="#0b1220" fill-opacity="0.14" stroke="rgba(255,255,255,0.03)"/>
+    <rect x="120" y="8" width="44" height="44" rx="8" fill="#0b1220" fill-opacity="0.14" stroke="rgba(255,255,255,0.03)"/>
+    <rect x="180" y="8" width="44" height="44" rx="8" fill="#0b1220" fill-opacity="0.14" stroke="rgba(255,255,255,0.03)"/>
+  </g>
+  <g transform="translate(1640,18)" opacity="0.7">
+    <rect x="0" y="8" width="44" height="44" rx="8" fill="#0b1220" fill-opacity="0.14" stroke="rgba(255,255,255,0.03)"/>
+    <circle cx="120" cy="30" r="14" fill="#f97316" fill-opacity="0.9"/>
+  </g>
+</svg>

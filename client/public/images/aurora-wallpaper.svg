@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="45%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="1000" fill="rgba(255,255,255,0.03)"/>
+  <ellipse cx="420" cy="270" rx="280" ry="220" fill="url(#glow1)" filter="url(#blur)"/>
+  <ellipse cx="1160" cy="320" rx="320" ry="250" fill="url(#glow2)" filter="url(#blur)"/>
+  <path d="M0 660 C220 590, 380 540, 560 590 S910 710, 1150 660 S1450 560, 1600 590 L1600 1000 L0 1000 Z" fill="#020617" fill-opacity="0.82"/>
+  <path d="M0 720 C260 650, 430 630, 610 680 S980 760, 1260 700 S1470 620, 1600 645" stroke="#7dd3fc" stroke-opacity="0.25" stroke-width="3" fill="none"/>
+  <circle cx="1260" cy="220" r="3" fill="#f8fafc"/>
+  <circle cx="1320" cy="250" r="2" fill="#f8fafc"/>
+  <circle cx="300" cy="180" r="2" fill="#f8fafc"/>
+  <circle cx="980" cy="160" r="2" fill="#f8fafc"/>
+  <path d="M0 820 C360 760, 680 760, 920 810 S1410 900, 1600 820" stroke="#cbd5e1" stroke-opacity="0.17" stroke-width="2" fill="none"/>
+</svg>
