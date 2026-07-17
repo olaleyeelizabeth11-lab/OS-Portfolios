@@ -29,7 +29,7 @@ export default function LoginScreen({ onEnter }) {
       >
         <div className="h-28 w-28 overflow-hidden rounded-full border border-white/15 bg-slate-900">
           <img
-            src="/public/images/elizabeth-profile.jpg"
+            src="/images/elizabeth-profile.jpg"
             alt="Avatar"
             className="h-full w-full object-cover"
           />

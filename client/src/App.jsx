@@ -8,12 +8,29 @@ import ToastContainer, { useToast } from './components/ToastContainer';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 
 function AppContent() {
-  const [unlocked, setUnlocked] = useState(false);
-  const [showLogin, setShowLogin] = useState(false);
+  // 1. Initialize states using sessionStorage so they survive page refreshes
+  const [unlocked, setUnlocked] = useState(() => {
+    return sessionStorage.getItem('os_unlocked') === 'true';
+  });
+  
+  const [showLogin, setShowLogin] = useState(() => {
+    return sessionStorage.getItem('os_show_login') === 'true';
+  });
+
   const { toasts, addToast, removeToast } = useToast();
   const { openWindow } = useWindow();
   const keyPressSequence = useRef('');
   const { isDarkMode } = useTheme();
+
+  // 2. Automatically sync state changes to sessionStorage whenever they change
+  useEffect(() => {
+    sessionStorage.setItem('os_unlocked', unlocked);
+  }, [unlocked]);
+
+  useEffect(() => {
+    sessionStorage.setItem('os_show_login', showLogin);
+  }, [showLogin]);
+
 
   // Show welcome notification when desktop is unlocked
   useEffect(() => {

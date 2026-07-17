@@ -27,7 +27,7 @@ app.use(express.json());
 app.get('/api/status', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
-
+g
 app.use('/api/projects', projectsRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/contact', contactRouter);
