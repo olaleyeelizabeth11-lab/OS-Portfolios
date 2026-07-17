@@ -34,7 +34,7 @@ export default function StartMenu({ isOpen, onClose, onAppClick }) {
     const fetchProjects = async () => {
       setLoadingProjects(true);
       try {
-        const response = await fetch('http://localhost:4000/api/projects?featured=true');
+        const response = await fetch('https://os-portfolios.onrender.com/api/projects?featured=true');
         if (response.ok) {
           const data = await response.json();
           if (data.projects?.length > 0) setProjects(data.projects);

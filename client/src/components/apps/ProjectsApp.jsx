@@ -89,7 +89,7 @@ export default function ProjectsApp() {
     const fetchProjects = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:4000/api/projects');
+        const response = await fetch('https://os-portfolios.onrender.com/api/projects');
         if (response.ok) {
           const data = await response.json();
           const normalizedProjects = (data.projects || []).map(p => ({
