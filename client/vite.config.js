@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://os-portfolios.onrender.com',
+        target: 'http://localhost:4000',
         changeOrigin: true,
         secure: false,
       },
